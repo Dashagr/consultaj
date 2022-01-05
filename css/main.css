@@ -1,71 +1,24 @@
 /* =================================================================== 
  *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *      ## links
- *  # typography & general theme styles
- *      ## Lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## Spacing
- *      ## pace.js styles - minimal
- *  # preloader
- *  # forms
- *      ## style placeholder text
- *      ## change autocomplete styles in chrome
- *  # buttons
- *  # additional components
- *      ## alert box
- *      ## additional typo styles
- *      ## skillbars 
- *  # reusable and common theme styles
- *      ## display headings
- *      ## section header
- *      ## slick slider
- *  # header styles
- *      ## header logo
- *      ## main navigation 
- *      ## mobile menu toggle 
- *  # home 
- *      ## home content
- *      ## home social 
- *      ## home animations
- *  # about
- *      ## about stats
- *  # services
- *      ## services list
- *  # works
- *      ## bricks/masonry
- *  # clients
- *      ## slider
- *      ## testimonials
- *  # contact
- *      ## loader animation
- *  # footer
- *      ## footer main
- *      ## footer bottom
- *      ## go to top
- *
- *
+ *  Fadesint Main Stylesheet
+ *  
  * =================================================================== */
 
 
 
 
+/* ===================================================================
+ * # variables
+ * ------------------------------------------------------------------- */
 
-body{
+ body{
     --main-color: #092189f0;
     --main-color-dark-bg: #0c2cb7f0;
 }
 /* ===================================================================
  * # base style overrides
- *
  * ------------------------------------------------------------------- */
+
 html {
     font-size: 10px;
 }
@@ -100,6 +53,7 @@ body {
 a {
     color: #0087cc;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -564,7 +518,8 @@ form,
     pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none;
+    -ms-user-select: none;
+        user-select: none;
 }
 
 .pace-inactive {
@@ -706,6 +661,7 @@ select {
     background: transparent;
     border-bottom: 2px solid rgba(0, 0, 0, 0.15);
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -721,7 +677,8 @@ select {
     -o-appearance: none;
     appearance: none;
     text-indent: 0.01px;
-    text-overflow: '';
+    -o-text-overflow: '';
+       text-overflow: '';
     margin: 0;
     line-height: 3rem;
     vertical-align: middle;
@@ -755,6 +712,7 @@ select {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
 
@@ -852,6 +810,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--main-color);
+    -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -881,6 +840,7 @@ input[type="button"] {
     white-space: nowrap;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #c5c5c5;
     border: .2rem solid #c5c5c5;
@@ -1616,8 +1576,9 @@ input::-moz-focus-inner {
     padding: 0;
     outline: 0;
     border: none;
-    width: 80px;
+    width: 40px;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1641,6 +1602,7 @@ input::-moz-focus-inner {
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -1782,13 +1744,17 @@ input::-moz-focus-inner {
     opacity: 1;
     visibility: visible;
     -webkit-transition-property: all;
+    -o-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+       transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+       transition-timing-function: ease-in-out;
     -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+       transition-delay: 0.3s;
     left: 0;
 }
 
@@ -1809,6 +1775,7 @@ input::-moz-focus-inner {
     letter-spacing: .3rem;
     color: var(--main-color);
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1846,6 +1813,7 @@ input::-moz-focus-inner {
     bottom: auto;
     background-color: rgb(000, 000, 000, 0.6);
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1858,6 +1826,7 @@ input::-moz-focus-inner {
     position: absolute;
     left: 0;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1916,8 +1885,8 @@ input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     opacity: .4;
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.8)));
+    background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
 }
@@ -1929,7 +1898,7 @@ input::-moz-focus-inner {
     width: 100%;
     height: 100%;
     opacity: .7;
-    background-color: #FFF;
+    background-color: #f9faff;
 }
 
 .s-home .overlay-dark {
@@ -2005,6 +1974,7 @@ input::-moz-focus-inner {
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -2055,6 +2025,7 @@ input::-moz-focus-inner {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
 
@@ -2087,6 +2058,7 @@ input::-moz-focus-inner {
 .home-social a {
     color: white;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -2107,6 +2079,7 @@ input::-moz-focus-inner {
     top: 0;
     line-height: 33px;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -2153,7 +2126,8 @@ html.cl-preload .home-content__main {
 }
 
 html.cl-loaded .home-content__main {
-    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
@@ -2452,7 +2426,8 @@ html.no-csstransitions .home-content__main {
     color: #FFFFFF;
     position: relative;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -2634,10 +2609,18 @@ html.no-csstransitions .home-content__main {
 }
 
 .service-item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 2.5rem;
@@ -2645,7 +2628,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .service-item-wrapper:hover {
-    box-shadow: 0 10px 20px rgb(0 0 0 / 4%);
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 4%);
+            box-shadow: 0 10px 20px rgb(0 0 0 / 4%);
 }
 
 
@@ -2789,6 +2773,7 @@ html.no-csstransitions .home-content__main {
 .item-folio__thumb img {
     vertical-align: bottom;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
@@ -2808,6 +2793,7 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     height: 100%;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     z-index: 1;
 }
@@ -2830,6 +2816,7 @@ html.no-csstransitions .home-content__main {
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
@@ -2849,6 +2836,7 @@ html.no-csstransitions .home-content__main {
     -ms-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2877,7 +2865,8 @@ html.no-csstransitions .home-content__main {
 .item-folio__project-link {
     display: block;
     color: #FFFFFF;
-    box-shadow: 0 0 0 1px #FFFFFF;
+    -webkit-box-shadow: 0 0 0 1px #FFFFFF;
+            box-shadow: 0 0 0 1px #FFFFFF;
     border-radius: 50%;
     height: 4.2rem;
     width: 4.2rem;
@@ -3014,6 +3003,7 @@ html.no-csstransitions .home-content__main {
     opacity: .55;
     padding: 1.5rem 2.8rem;
     -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -3100,6 +3090,7 @@ html.no-csstransitions .home-content__main {
     border: none;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     font: 0/0 a;
     text-shadow: none;
@@ -3678,18 +3669,19 @@ footer .row {
 
 .footer-logo {
     display: block;
-    margin: -.6rem 0 3.6rem 0;
+    margin: -.8rem 0 1.6rem 0;
     padding: 0;
     outline: 0;
     border: none;
-    width: 85px;
-    height: 28px;
-    background: url("../images/fidesint_color_logo.svg") no-repeat center;
-    background-size: 85px 28px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/logo.svg") no-repeat center;
+    background-size: 50px 50px;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -3812,6 +3804,7 @@ footer .row {
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -3914,6 +3907,3 @@ footer .row {
         padding-left: 0;
     }
 }
-
-
-/*# sourceMappingURL=main.css.map */
