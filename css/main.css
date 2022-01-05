@@ -55,6 +55,13 @@
  * =================================================================== */
 
 
+
+
+
+body{
+    --main-color: #092189f0;
+    --main-color-dark-bg: #0c2cb7f0;
+}
 /* ===================================================================
  * # base style overrides
  *
@@ -99,7 +106,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 a:hover,
@@ -426,7 +433,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #0072ac;
+    background: var(--main-color);
     position: absolute;
     left: -17px;
     top: 11px;
@@ -435,7 +442,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 dd {
@@ -565,7 +572,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #0072ac;
+    background: var(--main-color);
     position: fixed;
     z-index: 900;
     top: 0;
@@ -609,7 +616,7 @@ form,
 }
 
 .line-scale-pulse-out>div {
-    background-color: #0072ac;
+    background-color: var(--main-color);
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -844,7 +851,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #0072ac;
+    -webkit-text-fill-color: var(--main-color);
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -904,8 +911,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #0072ac;
-    border-color: #0072ac;
+    background: var(--main-color);
+    border-color: var(--main-color);
     color: #FFFFFF;
 }
 
@@ -948,8 +955,8 @@ button.btn--large {
 .btn--stroke,
 button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #0072ac;
-    color: #0072ac;
+    border: 0.2rem solid var(--main-color);
+    color: var(--main-color);
 }
 
 .btn--stroke:hover,
@@ -1183,7 +1190,7 @@ input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 .stats-tabs li a em {
@@ -1387,7 +1394,7 @@ input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #0072ac;
+    color: var(--main-color-dark-bg);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -1568,7 +1575,7 @@ input::-moz-focus-inner {
 
 .slick-slider .slick-dots li.slick-active button,
 .slick-slider .slick-dots li:hover button {
-    background: #0072ac;
+    background: var(--main-color);
 }
 
 
@@ -1662,7 +1669,7 @@ input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 .header-nav p {
@@ -1800,7 +1807,7 @@ input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #0072ac;
+    color: var(--main-color);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1925,7 +1932,7 @@ input::-moz-focus-inner {
     background-color: #FFF;
 }
 
-/* .s-home .overlay {
+.s-home .overlay-dark {
     position: absolute;
     top: 0;
     left: 0;
@@ -1933,7 +1940,7 @@ input::-moz-focus-inner {
     height: 100%;
     opacity: .6;
     background-color: #000000;
-} */
+}
 
 .no-js .s-home {
     background: #000000;
@@ -2030,8 +2037,8 @@ input::-moz-focus-inner {
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #0072ac;
-    border-right: 2px solid #0072ac;
+    border-bottom: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
     content: '';
     display: block;
     height: 8px;
@@ -2055,7 +2062,7 @@ input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #0072ac;
+    background-color: var(--main-color);
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -2117,7 +2124,7 @@ input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #0072ac;
+    color: var(--main-color);
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2401,7 +2408,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #0072ac;
+    background-color: var(--main-color);
     color: #010507;
     position: relative;
 }
@@ -2621,7 +2628,7 @@ html.no-csstransitions .home-content__main {
 .services-list .service-icon {
     /* float: left; */
     margin: auto;
-    color: #0072ac;
+    color: var(--main-color);
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -3239,7 +3246,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #0072ac;
+    background: var(--main-color);
 }
 
 .s-contact .form-field label::after {
@@ -3250,14 +3257,14 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #0072ac;
+    border-right: 5px solid var(--main-color);
 }
 
 .contact__line {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #0072ac;
+    background-color: var(--main-color-dark-bg); 
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3284,7 +3291,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #0072ac;
+    color: var(--main-color-dark-bg);
 }
 
 .contact-content input[type="email"],
@@ -3311,7 +3318,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #0072ac;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .contact-content button,
@@ -3407,7 +3414,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover,
 .contact-social li a:focus {
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 .contact-social li:last-child {
@@ -3430,7 +3437,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .message-success {
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 .message-warning i,
@@ -3646,7 +3653,7 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
-    color: #0072ac;
+    color: var(--main-color);
 }
 
 footer .row {
@@ -3677,7 +3684,7 @@ footer .row {
     border: none;
     width: 85px;
     height: 28px;
-    background: url("../images/logo-footer.png") no-repeat center;
+    background: url("../images/fidesint_color_logo.svg") no-repeat center;
     background-size: 85px 28px;
     font: 0/0 a;
     text-shadow: none;
@@ -3738,8 +3745,8 @@ footer .row {
     top: 0;
     right: 0;
     color: #FFFFFF;
-    background: #0072ac;
-    border-color: #0072ac;
+    background: var(--main-color);
+    border-color: var(--main-color);
     padding: 0 20px;
 }
 
