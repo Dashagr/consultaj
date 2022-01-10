@@ -2514,6 +2514,23 @@ html.no-csstransitions .home-content__main {
         max-width: 600px;
     }
 
+    .about-desc p{
+        text-align: center;
+    }
+
+    .about-text {
+        padding-left: 0rem;
+    }
+
+    .about-img{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .contrast__buttons{
+        padding-left: 0;
+    }
+    
     .stats__count {
         font-size: 8rem;
     }
@@ -2526,10 +2543,6 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 700px) {
     .about__line {
         right: 5.5rem;
-    }
-    .about-img{
-        max-width: 400px;
-        margin: 0 auto;
     }
 }
 
