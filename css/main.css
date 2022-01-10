@@ -2530,7 +2530,7 @@ html.no-csstransitions .home-content__main {
     .contrast__buttons{
         padding-left: 0;
     }
-    
+
     .stats__count {
         font-size: 8rem;
     }
@@ -2769,7 +2769,7 @@ html.no-csstransitions .home-content__main {
 
     .services-list .service-text {
         margin-left: 0;
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
     .services-list .service-icon {
@@ -2792,6 +2792,10 @@ html.no-csstransitions .home-content__main {
 
     .services-list h3 {
         font-size: 2.5rem;
+    }
+
+    .services-list .service-text {
+        font-size: 1.9rem;
     }
 
     .contrast__buttons {
