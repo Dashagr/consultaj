@@ -17,6 +17,7 @@
     --about-text-color: rgba(255, 255, 255, 0.5);
     --icons-headers-color: #fff;
     --about-bg-color: #e6e6e6;
+    --main-highlits: red;
 }
 /* ===================================================================
  * # base style overrides
@@ -1952,6 +1953,16 @@ input::-moz-focus-inner {
     line-height: 1.333;
     margin-top: 0;
     color: #000000;
+}
+
+.home-content h4 {
+    line-height: 1.3em;
+    opacity: .9;
+    margin-top: 3rem;
+}
+
+.home-content h4 span {
+    color: var(--main-highlits);
 }
 
 .home-content__main {
