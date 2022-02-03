@@ -5,7 +5,6 @@
  * =================================================================== */
 
 
-
 /* ===================================================================
  * # variables
  * ------------------------------------------------------------------- */
@@ -19,6 +18,7 @@
     --about-bg-color: #e6e6e6;
     --main-highlits: #e00e0e;
 }
+
 /* ===================================================================
  * # base style overrides
  * ------------------------------------------------------------------- */
@@ -1586,7 +1586,10 @@ input::-moz-focus-inner {
     transition: all 0.3s ease-in-out;
 }
 
-
+.header-logo img{
+    width: 40px;
+    height: 40px;
+}
 /* ------------------------------------------------------------------- 
  * ## main navigation 
  * ------------------------------------------------------------------- */
@@ -1694,6 +1697,10 @@ input::-moz-focus-inner {
 
 .header-nav__social li:last-child {
     margin: 0;
+}
+
+.header-nav__social li a span{
+    display: none;
 }
 
 .header-nav__close {
@@ -1890,7 +1897,7 @@ input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .4;
+    opacity: .35;
     background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 1)));
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 100%);
@@ -1955,13 +1962,20 @@ input::-moz-focus-inner {
     color: #000000;
 }
 
-.home-content h4 {
+.home-content p.special-offer {
+    font-size: 2.1rem;
+    font-family: "montserrat-medium", sans-serif;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
     line-height: 1.3em;
     opacity: .9;
     margin-top: 3rem;
 }
 
-.home-content h4 span {
+.home-content p.special-offer span {
     color: var(--main-highlits);
 }
 
@@ -2415,6 +2429,8 @@ html.no-csstransitions .home-content__main {
 
 .about-img img{
     border: 7px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 100%;
 }
 
 .about-img p{
@@ -3049,6 +3065,9 @@ html.no-csstransitions .home-content__main {
     margin: 0;
 }
 
+.contact-social li a span {
+    display: none;
+}
 .message-warning,
 .message-success {
     display: none;
@@ -3253,7 +3272,6 @@ html.no-csstransitions .home-content__main {
 }
 
 
-
 /* ===================================================================
  * # footer
  *
@@ -3264,7 +3282,7 @@ footer {
     font-size: 15px;
     line-height: 2;
     text-align: center;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 footer h4 {

@@ -1,198 +1,145 @@
 /* =================================================================== 
- *
- *  Glint v1.0 Base Stylesheet
- *  11-20-2017
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # imports 
- *  # normalize
- *  # basic/base setup styles
- *      ## Media
- *      ## Typography resets 
- *      ## links
- *      ## inputs
- *  # grid
- *      ## medium size devices
- *      ## tablets
- *      ## mobile devices
- *      ## small mobile devices
- *  # block grids
- *      ## medium size devices
- *      ## tablets
- *      ## mobile devices
- *      ## small mobile devices
- *  # MISC
- *
- * =================================================================== */
+*
+*  TOC:
+*  # imports 
+*  # normalize
+*  # basic/base setup styles
+*      ## Media
+*      ## Typography resets 
+*      ## links
+*      ## inputs
+*  # grid
+*      ## medium size devices
+*      ## tablets
+*      ## mobile devices
+*      ## small mobile devices
+*  # block grids
+*      ## medium size devices
+*      ## tablets
+*      ## mobile devices
+*      ## small mobile devices
+*  # MISC
+*
+* =================================================================== */
 
 
 /* ===================================================================
- * # imports 
- *
- * ------------------------------------------------------------------- */
+* # imports 
+*
+* ------------------------------------------------------------------- */
 @import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
+@import url("micons/micons.min.css");
 @import url("fonts.css");
 
-
 /* ===================================================================
- * # normalize
- * normalize.css v5.0.0 | MIT License | 
- * github.com/necolas/normalize.css
- *
- * ------------------------------------------------------------------- */
+* # normalize
+* normalize.css v5.0.0 | MIT License | 
+* github.com/necolas/normalize.css
+*
+* ------------------------------------------------------------------- */
 html {
     font-family: sans-serif;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
 body {
     margin: 0;
 }
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
+article,aside,footer,header,nav,section {
     display: block;
 }
-
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-
-figcaption,
-figure,
-main {
+figcaption,figure,main {
     display: block;
 }
-
 figure {
     margin: 1em 40px;
 }
-
 hr {
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     height: 0;
     overflow: visible;
 }
-
 pre {
     font-family: monospace, monospace;
     font-size: 1em;
 }
-
 a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-
-a:active,
-a:hover {
+a:active,a:hover {
     outline-width: 0;
 }
-
 abbr[title] {
     border-bottom: none;
     text-decoration: underline;
-    text-decoration: underline dotted;
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
 }
-
-b,
-strong {
+b, strong {
     font-weight: inherit;
 }
-
-b,
-strong {
+b, strong {
     font-weight: bolder;
 }
-
-code,
-kbd,
-samp {
+code, kbd, samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
-
 dfn {
     font-style: italic;
 }
-
 mark {
     background-color: #ff0;
     color: #000;
 }
-
 small {
     font-size: 80%;
 }
-
-sub,
-sup {
+sub,sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
-
 sub {
     bottom: -0.25em;
 }
-
 sup {
     top: -0.5em;
 }
-
-audio,
-video {
+audio,video {
     display: inline-block;
 }
-
 audio:not([controls]) {
     display: none;
     height: 0;
 }
-
 img {
     border-style: none;
 }
-
 svg:not(:root) {
     overflow: hidden;
 }
-
-button,
-input,
-optgroup,
-select,
-textarea {
+button,input,optgroup,select,textarea {
     font-family: sans-serif;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
 }
-
-button,
-input {
+button,input {
     overflow: visible;
 }
-
-button,
-select {
+button,select {
     text-transform: none;
 }
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+button,html [type="button"],[type="reset"],[type="submit"] {
     -webkit-appearance: button;
 }
 
@@ -203,7 +150,6 @@ button::-moz-focus-inner,
     border-style: none;
     padding: 0;
 }
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -218,39 +164,35 @@ fieldset {
 }
 
 legend {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: inherit;
     display: table;
     max-width: 100%;
     padding: 0;
     white-space: normal;
 }
-
 progress {
     display: inline-block;
     vertical-align: baseline;
 }
-
 textarea {
     overflow: auto;
 }
-
 [type="checkbox"],
 [type="radio"] {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0;
 }
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
-
 [type="search"] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
 }
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -284,18 +226,20 @@ template {
 
 
 /* ===================================================================
- * # basic/base setup styles
- *
- * ------------------------------------------------------------------- */
+* # basic/base setup styles
+*
+* ------------------------------------------------------------------- */
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 body {
@@ -313,21 +257,17 @@ button {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
-
 /* ------------------------------------------------------------------- 
- * ## Media
- * ------------------------------------------------------------------- */
+* ## Media
+* ------------------------------------------------------------------- */
 img,
 video {
     max-width: 100%;
     height: auto;
 }
-
-
 /* ------------------------------------------------------------------- 
- * ## Typography resets 
- * ------------------------------------------------------------------- */
+* ## Typography resets 
+* ------------------------------------------------------------------- */
 div,
 dl,
 dt,
@@ -360,7 +300,6 @@ h6 {
     -webkit-font-smoothing: auto;
     -webkit-font-smoothing: antialiased;
     -webkit-font-variant-ligatures: common-ligatures;
-    -moz-font-variant-ligatures: common-ligatures;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
 }
@@ -393,8 +332,8 @@ li {
 
 
 /* ------------------------------------------------------------------- 
- * ## links 
- * ------------------------------------------------------------------- */
+* ## links 
+* ------------------------------------------------------------------- */
 a {
     text-decoration: none;
     line-height: inherit;
@@ -406,8 +345,8 @@ a img {
 
 
 /* ------------------------------------------------------------------- 
- * ## inputs 
- * ------------------------------------------------------------------- */
+* ## inputs 
+* ------------------------------------------------------------------- */
 fieldset {
     margin: 0;
     padding: 0;
@@ -430,9 +369,9 @@ textarea {
 
 
 /* ===================================================================
- * # grid
- *
- * ------------------------------------------------------------------- */
+* # grid
+*
+* ------------------------------------------------------------------- */
 .row {
     width: 94%;
     max-width: 1200px;
@@ -454,7 +393,7 @@ textarea {
 
 
 /* column blocks
- * -------------------------------------- */
+* -------------------------------------- */
 [class*="col-"] {
     float: left;
     padding: 0 20px;
@@ -466,7 +405,7 @@ textarea {
 
 
 /* column width classes 
- * -------------------------------------- */
+* -------------------------------------- */
 .col-one {
     width: 8.33333%;
 }
@@ -525,8 +464,8 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## medium size devices
- * ------------------------------------------------------------------- */
+* ## medium size devices
+* ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     .row .row {
         margin-left: -15px;
@@ -583,8 +522,8 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## tablets
- * ------------------------------------------------------------------- */
+* ## tablets
+* ------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
     .row {
         width: 90%;
@@ -611,8 +550,8 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## mobile devices
- * ------------------------------------------------------------------- */
+* ## mobile devices
+* ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
     .row {
         width: auto;
@@ -648,11 +587,11 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## small mobile devices
- * ------------------------------------------------------------------- */
+* ## small mobile devices
+* ------------------------------------------------------------------- */
 
 /* stack columns on small mobile devices
- * ------------------------------------------------------------------- */
+* ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 400px) {
     .row .row {
@@ -676,11 +615,11 @@ textarea {
 
 
 /* ===================================================================
- * # block grids
- * ------------------------------------------------------------------- */
+* # block grids
+* ------------------------------------------------------------------- */
 
 /*   Equally-sized columns define at row level
- * ------------------------------------------------------------------- */
+* ------------------------------------------------------------------- */
 [class*="block-"]:after {
     content: "";
     display: table;
@@ -709,9 +648,9 @@ textarea {
 
 
 /**
- * Clearing for block grid columns. Allow columns with 
- * different heights to align properly.
- */
+* Clearing for block grid columns. Allow columns with 
+* different heights to align properly.
+*/
 
 .block-1-6 .col-block:nth-child(6n+1),
 .block-1-5 .col-block:nth-child(5n+1),
@@ -723,8 +662,8 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## medium size devices
- * ------------------------------------------------------------------- */
+* ## medium size devices
+* ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     .block-m-1-6 .col-block {
         width: 16.66667%;
@@ -759,8 +698,8 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## tablets
- * ------------------------------------------------------------------- */
+* ## tablets
+* ------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
     .block-tab-1-6 .col-block {
         width: 16.66667%;
@@ -795,8 +734,8 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## mobile devices
- * ------------------------------------------------------------------- */
+* ## mobile devices
+* ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
     .block-mob-1-6 .col-block {
         width: 16.66667%;
@@ -831,11 +770,11 @@ textarea {
 
 
 /* ------------------------------------------------------------------- 
- * ## small mobile devices
- * ------------------------------------------------------------------- */
+* ## small mobile devices
+* ------------------------------------------------------------------- */
 
 /* stack columns on small mobile devices
- * ------------------------------------------------------------------- */
+* ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 400px) {
     .stack .col-block {
@@ -849,9 +788,9 @@ textarea {
 
 
 /* ===================================================================
- * # MISC
- *
- * ------------------------------------------------------------------- */
+* # MISC
+*
+* ------------------------------------------------------------------- */
 .group:after {
     content: "";
     display: table;
@@ -860,7 +799,7 @@ textarea {
 
 
 /* Misc Helper Styles
- * -------------------------------------- */
+* -------------------------------------- */
 .is-hidden {
     display: none;
 }
@@ -923,6 +862,3 @@ textarea {
     margin-right: auto;
     text-align: center;
 }
-
-
-/*# sourceMappingURL=base.css.map */
